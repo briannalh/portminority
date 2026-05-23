@@ -11,9 +11,29 @@ html {
   width: 100vw;
   min-height: 100vh;
 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+
+  row-gap: 20px;
+}
+
+.grid-row {
   display: flex;
   justify-content: center;
+}
+
+.mark-row-top {
+  align-items: flex-end;
+}
+
+.logo-row {
   align-items: center;
+}
+
+.mark-row-bottom {
+  align-items: flex-start;
+  padding-top: 13px;
 }
 
 .logo-lockup {
@@ -28,22 +48,9 @@ html {
 }
 
 .mark {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-
   width: 54px;
   height: auto;
-
-  z-index: 3;
-}
-
-.mark-top {
-  top: 25vh;
-}
-
-.mark-bottom {
-  bottom: 25vh;
+  display: block;
 }
 
 h2 {
@@ -72,25 +79,21 @@ h2 {
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-  .logo-lockup {
-    width: 100vw;
+  .main {
+    row-gap: 100px;
   }
 
-  h2 {
-    font-size: 42px;
-    transform: translate(-50%, 59%);
+  .logo-lockup {
+    width: 100vw;
   }
 
   .mark {
     width: 48px;
   }
 
-  .mark-top {
-    top: 25vh;
-  }
-
-  .mark-bottom {
-    bottom: 25vh;
+  h2 {
+    font-size: 42px;
+    transform: translate(-50%, 59%);
   }
 }
 
