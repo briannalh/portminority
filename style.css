@@ -8,6 +8,7 @@ html {
 }
 
 .main {
+  width: 100vw;
   min-height: 100vh;
 
   display: flex;
@@ -38,11 +39,11 @@ html {
 }
 
 .mark-top {
-  top: 200px;
+  top: 25vh;
 }
 
 .mark-bottom {
-  bottom: 200px;
+  bottom: 25vh;
 }
 
 h2 {
@@ -85,11 +86,11 @@ h2 {
   }
 
   .mark-top {
-    top: 200px;
+    top: 25vh;
   }
 
   .mark-bottom {
-    bottom: 200px;
+    bottom: 25vh;
   }
 }
 
