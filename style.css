@@ -26,6 +26,25 @@ html {
   display: block;
 }
 
+.mark {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 54px;
+  height: auto;
+
+  z-index: 3;
+}
+
+.mark-top {
+  top: 200px;
+}
+
+.mark-bottom {
+  bottom: 200px;
+}
+
 h2 {
   position: absolute;
   left: 50%;
@@ -58,7 +77,19 @@ h2 {
 
   h2 {
     font-size: 42px;
-    transform: translate(-50%, 55%);
+    transform: translate(-50%, 59%);
+  }
+
+  .mark {
+    width: 48px;
+  }
+
+  .mark-top {
+    top: 200px;
+  }
+
+  .mark-bottom {
+    bottom: 200px;
   }
 }
 
